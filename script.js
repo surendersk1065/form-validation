@@ -38,7 +38,7 @@ else{
 }
 
 if(validate == true){
-    window.location.href = "https://surendersk1065.github.io/greenden-emc/"
+    window.location.href = "https://surendersk1065.github.io/word-counter/"
 }
 })
 
