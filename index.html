@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Registration Form</title>
+  </head>
+  <style>
+    .name-err,.mail-err,.pass-err{
+        display: none;
+    }
+  </style>
+  <body style="background-color: #DABBF5;">
+    <h1 class="text-2xl md:text-4xl text-center my-7 font-bold">After Form Validation Click Submit to enter into <span class="font-bold text-red-600">PROJECT 2 </span></h1>
+
+    <!-- form -->
+
+    <div class="form-container bg-white flex m-auto my-12 rounded-3xl" style="width: 80%; height: 520px;;">
+        <div class="s1 relative" style="width: 50%;">
+                <img src="./media/bg.jpg" alt="" style="height: 100%; width: 100%;" class="rounded-3xl">
+                 <div class="para absolute top-52 p-2 md:p-8">
+                    <p class="text-white text-sm md:text-2xl font-bold">Welcome ! This is a Registration form You can Enter the details and u can proceed into the website</p>
+                 </div>
+        </div>
+
+        <div class="s2 px-2 md:px-8 pt-20" style="width: 50%;" >
+            <form action="">
+                <p class="md:text-3xl font-bold mb-5">Register Here</p>
+                <div class="name mb-5">
+                    <label for="">Name</label>
+                    <input type="text" name="" id="name" class="block border-2 border-gray-400 md:p-1" style="width: 100%;">
+                    <div class="flex justify-between">
+                        <span class="text-red-600 text-xs name-err">Name must contain only letters</span>
+                    </div>
+                </div>
+
+                <div class="email mb-5">
+                    <label for="">Email</label>
+                    <input type="email" name="" id="mail" class="block border-2 border-gray-400 md:p-1" style="width: 100%;">
+                    <div class="flex justify-between">
+                        <span class="text-red-600 text-xs mail-err">Please provide valid Email address</span>
+                    </div>
+                </div>
+
+                <div class="pass mb-5">
+                    <label for="">Password</label>
+                    <input type="password" name="" id="pass" class="block border-2 border-gray-400 md:p-1 " style="width: 100%;">
+                    <div class="flex justify-between">
+                        <span class="text-red-600 text-xs pass-err">Password must contain at least any one aA!@#$%&*? and 8 char</span>
+                    </div>
+                </div>
+
+                <div class="sub">
+                    <input type="submit" name="" id="submit" class="p-2 rounded cursor-pointer" style="background-color: #DABBF5;">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
